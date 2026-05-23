@@ -1,0 +1,38 @@
+form {
+    background-color: #212121;
+    width: 384px;
+    border-radius: 1rem;
+    padding: 2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form h2 {
+    color: white;
+    text-align: start;
+    font-size: 20px;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+fieldset label {
+    font-size: 16px;
+    color: white;
+}
+
+fieldset input {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #33353F;
+    background-color: transparent;
+    padding: 8px 16px;
+}
