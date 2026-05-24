@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #06151A;
+
 }
 
 header {
@@ -11,17 +13,32 @@ header {
   justify-content: center;
   align-items: center;
 }
-figure.banner{
-  max-width:100%;
-  height: auto;
-  background: linear-gradient(180deg, #17D9B1 0%,#06151A);
-  margin: 0;
-  padding: 10px 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+
+/* FORMULARIO */
+fieldset label {
+  font-size: 16px;
+  color: white;
 }
-figure.banner img{
-  width: 40%;
+
+fieldset input,
+fieldset select {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #33353F;
+  background-color: transparent;
+  padding: 8px 16px;
+  color: white;
+}
+
+fieldset select option {
+  background-color: transparent;
+  padding: 8px 16px;
+  color: white;
+}
+fieldset select option:active {
+  background-color: #33353F;
+}
+
+fieldset input::placeholder {
+  color: #33353F;
 }
