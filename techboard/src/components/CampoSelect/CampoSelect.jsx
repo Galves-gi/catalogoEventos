@@ -1,12 +1,19 @@
 
-export function CampoSelect({ htmlFor, titulo, name, value, nameValue }) {
+export function CampoSelect({ htmlFor, titulo, value, nameValue, eventos }) {
     return (
         <fieldset>
             <label htmlFor={htmlFor}>
                 {titulo}
             </label>
-            <select name={name}>
-                <option value={value}>{nameValue}</option>
+            <select defaultValue=" ">
+                <option value="" disabled >
+                    Seleciona uma opção
+                </option>
+                {eventos.map(function(evento){
+                    return <option value={evento.id} key={evento.id}>
+                        {evento.tema}
+                    </option>
+                })}
             </select>
         </fieldset>
     )

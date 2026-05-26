@@ -1,3 +1,5 @@
+import style from './Cabecalho.module.css'
+
 export function Cabecalho() {
     return (
         <header>

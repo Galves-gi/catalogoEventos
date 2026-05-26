@@ -1,11 +1,10 @@
 import { CampoInput } from "../CampoInput/CampoInput"
 import { CampoSelect } from "../CampoSelect/CampoSelect"
 import { Botao } from "../Botao/Botao"
-import style from"./Formulario.module.css"
 
-export function Formulario() {
+export function Formulario({eventos}) {
     return (
-        <form className={style.formulario}>
+        <form className="formulario">
             <h2>Preencha para criar um evento:</h2>
             <CampoInput
                 htmlFor="nomeEvento"
@@ -27,7 +26,8 @@ export function Formulario() {
                 titulo="Tema do evento"
                 name="selectEvento"
                 value="teste"
-                nameValue="teste" />
+                nameValue="teste"
+                eventos={eventos} />
             <Botao
                 type="submit"
                 name="botaoEvento"

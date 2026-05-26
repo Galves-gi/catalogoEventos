@@ -1,0 +1,8 @@
+header {
+    max-width: 100%;
+    background-color: #06151A;
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
