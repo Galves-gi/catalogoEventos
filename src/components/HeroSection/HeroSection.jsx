@@ -1,4 +1,4 @@
-import { Formulario } from '../formulario/Formulario'
+import { Formulario } from '../Formulario/Formulario'
 import banner from '../../assets/banner.png'
 import style from './HeroSection.module.css'
 

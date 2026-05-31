@@ -29,9 +29,4 @@ section.banner img {
         height: auto;
         object-fit: contain;
     }
-
-
-    .formulario {
-        flex: 1;
-    }
 }
