@@ -7,8 +7,9 @@ export function Formulario({ temas, adicionarEvento }) {
     function aoFormSubmit(formData) {
         console.log(formData.get("selectEvento"));
         const evento = {
+            id: crypto.randomUUID(),
             imagem: formData.get("imagemEvento"),
-            tema: temas.find(tema => tema.tema === formData.get("selectEvento")),
+            tema: formData.get("selectEvento"),
             nome: formData.get("nomeEvento"),
             data: formData.get("dataEvento"),
             tituloCard: formData.get("nomeEvento")

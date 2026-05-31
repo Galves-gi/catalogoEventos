@@ -8,6 +8,7 @@ export function ContainerSecaoCards({ eventos, temas }) {
 
             {temas.map(grupo => {
                 const eventosDoTema = eventos.filter(evento => evento.tema === grupo.tema)
+
                 if (eventosDoTema.length === 0) return null
 
 

@@ -3,7 +3,7 @@ import style from "./Cards.module.css"
 export function Cards({imagemCard,tituloCard,tema,data,descricao}) {
     return (
         <article className={style.card}>
-            <img src={imagemCard} alt={tituloCard} />
+            <img src={imagemCard || null} alt={tituloCard} />
             <div>
                 <h6 className={style.blocoTema}>
                     {tema}
@@ -14,9 +14,6 @@ export function Cards({imagemCard,tituloCard,tema,data,descricao}) {
                 <h3>
                     {tituloCard}
                 </h3>
-                <p>
-                    {descricao}
-                </p>
             </div>
         </article>
     )
