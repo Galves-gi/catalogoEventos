@@ -1,0 +1,3 @@
+FormData()
+
+Um elemento HTML <form>— quando especificado, o FormDataobjeto será preenchido com as formchaves/valores atuais, usando a propriedade `name` de cada elemento para as chaves e o valor enviado para os valores. Ele também codificará o conteúdo de entrada de arquivo. Um formdataevento é disparado no formulário quando o FormDataobjeto é criado, permitindo que o formulário modifique os dados, se necessário.

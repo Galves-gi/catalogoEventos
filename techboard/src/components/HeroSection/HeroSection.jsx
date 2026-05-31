@@ -1,12 +1,12 @@
-import { Formulario } from '../formulario/formulario' 
+import { Formulario } from '../formulario/Formulario'
 import banner from '../../assets/banner.png'
-import style from'./HeroSection.module.css'
+import style from './HeroSection.module.css'
 
-export function HeroSection({eventos}) {
+export function HeroSection({ temas }) {
     return (
         <section className={style.banner}>
             <img src={banner} alt="Banner TechBoard" />
-            <Formulario eventos={eventos} />
+            <Formulario temas={temas} />
         </section>
     )
 }

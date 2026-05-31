@@ -5,6 +5,19 @@ import { ContainerSecaoCards } from './components/ContainerSecaoCards/ContainerS
 import frontend1 from './assets/frontend1.png'
 
 function App() {
+  const temas = [
+    {
+      id: 1,
+      tema: "FrontEnd"
+    }, {
+      id: 2,
+      tema: "BackEnd"
+    },
+    {
+      id: 3,
+      tema: "FullStack"
+    }
+  ]
 
   const eventos = [
     {
@@ -14,22 +27,19 @@ function App() {
       data: "12/02/2022",
       tituloCard: "FrontEnd",
       descricao: "Descricao"
-    },
-    {
-      id: 2,
-      tema: "BackEnd",
-    },
-    {
-      id: 3,
-      tema: "FullStack",
     }
   ]
+
+  function adicionarEvento(evento) {
+    eventos.push(evento)
+    console.log("evento enviado", evento, "todos os eventos", eventos);
+  }
 
   return (
     <>
       <Cabecalho />
-      <HeroSection eventos={eventos} />
-      <ContainerSecaoCards eventos={eventos} />
+      <HeroSection temas={temas} adicionarEvento={adicionarEvento} />
+      <ContainerSecaoCards eventos={eventos} temas={temas} />
     </>
   )
 }
