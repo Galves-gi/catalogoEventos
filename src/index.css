@@ -74,7 +74,7 @@ form {
 }
 
 form h2 {
-  color: white;
+  color: var(--branco);
   text-align: start;
   font-size: 20px;
 }
@@ -91,7 +91,7 @@ form fieldset {
 
 fieldset label {
   font-size: 16px;
-  color: white;
+  color: var(--branco);
 }
 
 fieldset input,
@@ -101,16 +101,16 @@ fieldset select {
   border: 1px solid var(--cinza);
   background-color: transparent;
   padding: 8px 16px;
-  color: white;
+  color: var(--branco);
 }
 
 fieldset select option {
   background-color:var(--neutro);
   padding: 8px 16px;
-  color: white;
+  color: var(--branco);
 }
 
 
 fieldset input::placeholder {
-  color: var(--cinza);
+  color: var(--branco);
 }
